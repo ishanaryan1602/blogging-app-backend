@@ -13,7 +13,7 @@ app.use(express.urlencoded({ encoded: true }));
 app.set("view engine", "ejs");
 app.set("views",path.resolve("./views"))
 
-app.use("/", urlpaths);
+app.use("/blog", urlpaths);
 
 app.use("/", (req, res, next) => {
   res.render("err");
