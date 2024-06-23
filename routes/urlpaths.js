@@ -7,11 +7,6 @@ router.get("/test", (req, res) => {
   res.send("hello this is from the test route");
 });
 
-router.get("/", (req, res) => {
-  res.render("homepage")
-});
-
-
 router.get("/register", (req, res) => {
   res.render("register");
 });

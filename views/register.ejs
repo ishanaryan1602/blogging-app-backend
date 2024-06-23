@@ -10,7 +10,8 @@
     <%- include('partials/nav') %>
 
     <div class="container mt-5">
-      <form action="/register" method="post">
+      <h1 class="mb-3">Register your account</h1>
+      <form action="/blog/register" method="post">
         <div class="form-group mb-4">
           <label for="exampleInputEmail1">Username</label>
           <input
@@ -43,9 +44,7 @@
         <button type="submit" class="btn btn-primary mt-3">Submit</button>
       </form>
     </div>
-    
-    <%- include('partials/retLogin') %>
 
-    <%- include('partials/script') %>
+    <%- include('partials/retLogin') %> <%- include('partials/script') %>
   </body>
 </html>
